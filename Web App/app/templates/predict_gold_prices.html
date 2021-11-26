@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+
+<h3 class="display-4">Predict Gold Prices</h3>
+
+<p class="lead">Insert the initial conditions of an average week</p>
+  
+  <form class="form"  method="POST">
+          {{ form.hidden_tag() }}
+          {{ wtf.form_errors(form, hiddens="only") }}
+
+            <div class="container">
+                <div class="row>"> 
+                    <div class="col"> 
+                {{ form.ypred.label(class="form-label") }}
+                {{ form.ypred(class="form-control") }}
+                    </div>
+                </div>
+                <div class="row>"> 
+                    <div class="col"> 
+                            {{ form.x1.label(class="form-label") }}
+                            {{ form.x1(class="form-control", oninput="library.run_gold_prices_prediction_model()") }}
+                    </div>
+                    <div class="col"> 
+                            {{ form.x2.label(class="form-label") }}
+                            {{ form.x2(class="form-control", oninput="library.run_gold_prices_prediction_model()") }}
+                    </div>
+                </div>
+
+            <fieldset class="form-group form-field">
+                <div class="row>"> 
+                    <div class="col"> 
+                            {{ form.x3.label(class="form-label") }}
+                            {{ form.x3(class="form-control", oninput="library.run_gold_prices_prediction_model()") }}
+                    </div>
+                    <div class="col"> 
+                            {{ form.x4.label(class="form-label") }}
+                            {{ form.x4(class="form-control", oninput="library.run_gold_prices_prediction_model()") }}
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-group form-field">
+                <div class="row>"> 
+                    <div class="col"> 
+                        {{ form.x5.label(class="form-label") }}
+                        {{ form.x5(class="form-control", oninput="library.run_gold_prices_prediction_model()") }}
+                    </div>
+                    <div class="col"> 
+                        {{ form.x6.label(class="form-label") }}
+                        {{ form.x6(class="form-control", oninput="library.run_gold_prices_prediction_model()") }}
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-group form-field">
+                <div class="row>"> 
+                    <div class="col"> 
+                        {{ form.x7.label(class="form-label") }}
+                        {{ form.x7(class="form-control", oninput="library.run_gold_prices_prediction_model()") }}
+                    </div>
+                    <div class="col"> 
+                        {{ form.x8.label(class="form-label") }}
+                        {{ form.x8(class="form-control", oninput="library.run_gold_prices_prediction_model()") }}
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-group form-field">
+                <div class="row>"> 
+                    <div class="col"> 
+                        {{ form.x9.label(class="form-label") }}
+                        {{ form.x9(class="form-control", oninput="library.run_gold_prices_prediction_model()") }}
+                    </div>
+                    <div class="col"> 
+                        {{ form.x10.label(class="form-label") }}
+                        {{ form.x10(class="form-control", oninput="library.run_gold_prices_prediction_model()") }}
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-group form-field">
+                <div class="row>"> 
+                    <div class="col"> 
+                        {{ form.x11.label(class="form-label") }}
+                        {{ form.x11(class="form-control", oninput="library.run_gold_prices_prediction_model()") }}
+                    </div>
+                </div>
+            </fieldset>
+ 
+
+        </div>
+
+      </form>
+
+    
+</p>{% endblock %}
