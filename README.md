@@ -1,10 +1,8 @@
 # Term 3 design thinking project
-## NOTE: Readme of web app is in web app folder
-
-# Watch the video describing our work [here](https://youtu.be/EXGVJrGnt-k) 
+**NOTE: Readme of web app is in web app folder**
+Watch the video describing our work [here](https://youtu.be/EXGVJrGnt-k) 
 
 # Task 1
---------------
 Task 1 description:
 
 Build a **Multiple Linear Regression model** that predicts the number of deaths in various countries due to COVID-19. You are free to select and choose the dataset you would like to use while building the model and are allowed to use the Pandas Library in your code and can use Excel.
@@ -20,7 +18,7 @@ As a general guide, you may need to undertake the following actions:
 - Build a **model** and **test the accuracy of your model**, using an appropriately chosen metric(hint: r2 is not a good metric for this task).
 - If needed, improve your model by incorporating other predictors, and/or removing existing ones.
 - Discuss your data sets, model, accuracy, and what metrics you used to judge the accuracy.
-----------------
+
 # Overview of task 1 implementation:
 
 Our team built a **Multiple Linear Regression model** that predicts the number of deaths in various countries due to COVID-19. 
@@ -35,7 +33,7 @@ Predictor variables: (selected according to research done)
 `icu_patients`, `icu_patients_per_million`, `hosp_patients`, `hosp_patients_per_million`, `hospital_beds_per_thousand`, `reproduction_rate`, `stringency_index`, `total_tests`, `total_vaccinations`, `population_density`,`gdp_per_capita`, `location`, `date`
 
 Note: we did NOT use any existing machine learning packages, such as scikit-learn as it was the constraint of the project
-----------
+
 # Task 2
 
 Task 2 description: 
@@ -52,10 +50,9 @@ In general, you may want to consider performing the following steps:
 - Choose an **appropriate metric** to evaluate your model (you may use the same metric as the one used in Task 1).
 - Improve your model.
 
---------------
+# Overview of task 2 implementation:
 
-# Design task 
-## Question: How did COVID-19 impact the economy?
+### Design question: How did COVID-19 impact the economy?
 
 Since macro economy indicators is usually published only once during each financial quarter, there will only be 4 data points if we look at the 2021/2021 period. Hence, we did not use macro economy indicators as the target as there is insfficient data for the time period we are looking at.
 
